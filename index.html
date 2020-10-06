@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TODO LIST</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="icons/css/fontello.css" rel="stylesheet" type="text/css">
+    <link href="logo.png" rel="shortcut icon">
+</head>
+
+<body>
+    <main>
+        <textarea placeholder="Your TODO:" id="msg"></textarea>
+        <div id="buttons">
+            <button class="btn"><i class="demo-icon icon-plus"></i></button>
+            <button class="btn deleteAll">
+                <div>Clear</div><i class="demo-icon icon-cancel"></i>
+            </button>
+        </div>
+        <div>
+            <div id="title">
+                <div>TODO List:</div><input id="search" placeholder="Search for TODO:">
+            </div>
+            <div id="alert" data-aos="fade-in">NO TODOS</div>
+            <div id="commentsDiv"></div>
+            <div id="copyright">Made by BRUHHHH69 <br>Version 1.0.0</div>
+        </div>
+    </main>
+    </div>
+    <template>
+        <div class="boxAll">
+            <div id="todo">
+                <div id="box">
+                    <div id="first"></div>
+                    <div id="second" title="EDIT"></div>
+                </div>
+                <div id="buttons2">
+                    <i id="clone" class="icon demo-icon icon-clone" title="CLONE"></i>
+                    <div style="margin: 0 5px;"></div>
+                    <i id="delete" class="icon demo-icon icon-trash-empty" title="DELETE"></i>
+                </div>
+            </div>
+        </div>
+    </template>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="functions.js"></script>
+</body>
+
+</html>
